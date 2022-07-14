@@ -261,6 +261,7 @@ module.exports = {
 - Ngoài `source-map` ra thì còn có các giá trị khác như `eval`, `eval-cheap-source-map`,...tùy thuộc vào mục đích sử dụng.
 - **Khuyên dùng**: Chỉ nên để `source-map` khi dev, khi build ra production thì hãy disable nó đi vì `source-map` sẽ làm lộ mã nguồn gốc cũng như là tăng kích thước các file build.
 - Webpack nhận các biến môi trường thông qua `--env` trong câu lệnh script khi chạy webpack. Vì thế bạn hãy thêm `"start": "webpack serve --env development"` trong script của `package.json` để truyền `development = true` vào webpack. `module.exports` ở file `webpack.config.js` ngoài bằng một object thì nó còn có thể là một function với tham số là biến object môi trườn env.
+- Bạn cũng có thể truyền biến môi trường vào webpack thông qua `process.env` của NodeJs. Nếu máy windows thì `"start": "SET NODE_ENV=production&webpack serve"`, còn Linux thì `"start": "NODE_ENV=production webpack serve"`. Bên file `webpack.config.js` chỉ cần dùng `process.env.NODE_ENV` để nhận giá trị.
 
 **`webpack.config.js`**
 
