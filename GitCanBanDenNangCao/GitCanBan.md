@@ -67,7 +67,7 @@ Chúng ta sẽ có các khu vực theo thứ tự dưới đây
 1. **Khu vực làm việc**: Chính là nơi chúng ta đang code, vẫn ở local
 2. **Khu vực staging**: Sau khi dùng `git add` thì file sẽ được đưa lên khu vực này, vẫn ở trên local
 3. **Khu vực committed**: Sau khi dùng `git commit` thì file từ staging sẽ được đưa lên đây, cũng vẫn ở trên local
-4. **Khu vực remote (gọi origin cũng được)**: Sau khi dùng `git push` sẽ file sẽ được đưa lên đây, bây giờ file của bạn đã đưa lên trên server
+4. **Khu vực remote (gọi origin cũng được)**: Sau khi dùng `git push` sẽ file ở commited lên đây, bây giờ file của bạn đã đưa lên trên server
 
 ## 5. Thêm file vào khu vực Staging với `git add`
 
@@ -299,7 +299,7 @@ HostName github.com
 User git
 IdentityFile ~/.ssh/id_rsa
 
-#React-Awesome duthanhduoc05
+#React-Awesome duthanhduoc06
 Host github-duthanhduoc06.com
 HostName github.com
 User git
@@ -396,7 +396,7 @@ Cách viết `.gitignore`
 - Ignore tất cả các file có tên bắt đầu là log: `log*`
 - Ignore tất cả các file có đuôi là `.exe` ở theo đường dẫn `folder/file.exe` (các file ở đường dẫn `folder/sub/file.exe` sẽ không bị ignore): `folder/**.exe`
 - Ignore tất cả các file có đuôi là `.exe` ở thư mục `folder` dù cho có nằm ở sub-folder đi chăng nữa: `folder/**/**.exe`
-- Ignore tất cả các file bên trong thư mục folder: `folder/**`
+- Ignore mọi thứ bên trong thư mục folder: `folder/**`
 
 ### Xử lý Git cache
 
