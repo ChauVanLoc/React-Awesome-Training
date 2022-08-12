@@ -12,7 +12,7 @@
 
 ## 2. Khởi tạo Project với CRA
 
-## 3. Giới thiệu về cầu trúc folder của React.Js
+## 3. Giới thiệu về cầu trúc folder Project React.Js do CRA tạo
 
 ## 4. Sử dụng prettier và Eslint trong React.js
 
