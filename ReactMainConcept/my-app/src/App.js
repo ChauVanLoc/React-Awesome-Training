@@ -5,6 +5,7 @@ import BareInput from './BareInput'
 import Clock from './Clock'
 import CorrectlyState from './CorrectlyState'
 import Form from './Form/Form'
+import UncontrolledComponent from './Form/UncontrolledComponent'
 import Layout from './Layout'
 import LoginControl from './LoginControl'
 import ProductList from './ProductList/ProductList'
@@ -31,7 +32,8 @@ function App() {
       {/* <LoginControl hidden={false} /> */}
       {/* <CorrectlyState /> */}
       {/* <ProductList /> */}
-      <Form />
+      {/* <Form /> */}
+      <UncontrolledComponent />
     </div>
   )
 }
