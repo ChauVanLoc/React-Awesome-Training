@@ -4,6 +4,7 @@ import BareButton from './BareButton'
 import BareInput from './BareInput'
 import Clock from './Clock'
 import CorrectlyState from './CorrectlyState'
+import Form from './Form/Form'
 import Layout from './Layout'
 import LoginControl from './LoginControl'
 import ProductList from './ProductList/ProductList'
@@ -29,7 +30,8 @@ function App() {
       </Layout> */}
       {/* <LoginControl hidden={false} /> */}
       {/* <CorrectlyState /> */}
-      <ProductList />
+      {/* <ProductList /> */}
+      <Form />
     </div>
   )
 }
