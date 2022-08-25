@@ -29,7 +29,7 @@ class Layout extends Component {
 export class Composition extends Component {
   render() {
     return (
-      <div>
+      <>
         Composition
         <Button />
         <Button className='btn-yellow'>Yellow</Button>
@@ -37,7 +37,7 @@ export class Composition extends Component {
           left={<Button className='btn-left'>Left</Button>}
           right={<Button className='btn-right'>Right</Button>}
         />
-      </div>
+      </>
     )
   }
 }
