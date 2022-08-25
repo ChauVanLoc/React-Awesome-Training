@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import BareButton from './BareButton'
 import BareInput from './BareInput'
+import Calculator from './Calculator/Calculator'
 import Clock from './Clock'
 import CorrectlyState from './CorrectlyState'
 import Form from './Form/Form'
@@ -33,7 +34,8 @@ function App() {
       {/* <CorrectlyState /> */}
       {/* <ProductList /> */}
       {/* <Form /> */}
-      <UncontrolledComponent />
+      {/* <UncontrolledComponent /> */}
+      <Calculator />
     </div>
   )
 }
