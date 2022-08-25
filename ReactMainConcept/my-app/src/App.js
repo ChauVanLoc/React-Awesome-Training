@@ -4,6 +4,8 @@ import BareButton from './BareButton'
 import BareInput from './BareInput'
 import Calculator from './Calculator/Calculator'
 import Clock from './Clock'
+import Composition from './CompositionvsInheritance/Composition'
+import Inheritance from './CompositionvsInheritance/Inheritance'
 import CorrectlyState from './CorrectlyState'
 import Form from './Form/Form'
 import UncontrolledComponent from './Form/UncontrolledComponent'
@@ -35,7 +37,10 @@ function App() {
       {/* <ProductList /> */}
       {/* <Form /> */}
       {/* <UncontrolledComponent /> */}
-      <Calculator />
+      {/* <Calculator />
+       */}
+      {/* <Inheritance /> */}
+      <Composition />
     </div>
   )
 }
