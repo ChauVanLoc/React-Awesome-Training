@@ -12,6 +12,7 @@ import UncontrolledComponent from './Form/UncontrolledComponent'
 import Layout from './Layout'
 import LoginControl from './LoginControl'
 import ProductList from './ProductList/ProductList'
+import FilterableProductTable from './ThinkingInReact/FilterableProductTable'
 
 function App() {
   // const [name, setName] = useState('Casio')
@@ -40,7 +41,8 @@ function App() {
       {/* <Calculator />
        */}
       {/* <Inheritance /> */}
-      <Composition />
+      {/* <Composition /> */}
+      <FilterableProductTable />
     </div>
   )
 }
