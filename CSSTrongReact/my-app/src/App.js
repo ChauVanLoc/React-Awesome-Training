@@ -21,7 +21,7 @@ function App() {
         </a>
       </header>
       <ProductList />
-      <Cart />
+      <Cart isShow={true} />
     </div>
   )
 }
