@@ -1,7 +1,7 @@
 // import { useState } from 'react'
 import './App.css'
-import AutoBatching from './AutoBatching'
-// import RuleOfHook from './ruleOfHook'
+// import AutoBatching from './AutoBatching'
+import RuleOfHook from './ruleOfHook'
 // import User from './User'
 
 function App() {
@@ -12,8 +12,8 @@ function App() {
       <button onClick={() => setIsShow((prevState) => !prevState)}>
         Change isShow
       </button> */}
-      {/* <RuleOfHook /> */}
-      <AutoBatching />
+      <RuleOfHook />
+      {/* <AutoBatching /> */}
     </div>
   )
 }
