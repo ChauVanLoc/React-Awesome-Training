@@ -101,7 +101,7 @@ Lúc này bạn chỉ cần chạy
 - `npm run prettier`: Kiểm tra lỗi prettier format
 - `npm run prettier:fix`: Tự fix lỗi prettier format
 
-### 4.7. Thêm file `.prettierignore` và `.eslintignore` để ignore những file bạn không muốn prettier và eslint format
+### 4.7. Thêm file `.prettierrignore` và `.eslintignore` để ignore những file bạn không muốn prettier và eslint format
 
 Cú pháp viết trong những file này tương tự như trong file `.gitignore`, các bạn có thể tìm lại trong file `GitCanban.md` trong thư mục `GitCanBanDenNangCao` nhé.
 
