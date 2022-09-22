@@ -5,11 +5,16 @@ type TitleProps = {
   address: {
     street: string
   }
+  handleClickTitle: (value: any) => void
 }
 
 function Title(props: TitleProps) {
-  console.log(props.address)
-  return <h1 className={styles.title}>To do list typescript</h1>
+  console.log(props)
+  return (
+    <h1 className={styles.title} onClick={() => props.handleClickTitle(100)}>
+      To do list typescript
+    </h1>
+  )
 }
 
 function equal(prevProp: TitleProps, nextProps: TitleProps) {
