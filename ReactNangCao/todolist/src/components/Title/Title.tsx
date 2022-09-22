@@ -16,4 +16,4 @@ function equal(prevProp: TitleProps, nextProps: TitleProps) {
   return prevProp.address.street === nextProps.address.street
 }
 
-export default React.memo(Title, equal)
+export default React.memo(Title)
