@@ -272,8 +272,6 @@ Cách an toàn nhất trong mọi trường hợp là cứ dùng `git merge` đi
 
 Phổ biến nhất là chỉ cần gõ `git fetch`, nó sẽ load về local tất cả những branch, commit hiện có.
 
-### git stash
-
 ### git remote
 
 Lệnh `git remote` cho phép tạo, xem, xóa kết nối với các repo.
