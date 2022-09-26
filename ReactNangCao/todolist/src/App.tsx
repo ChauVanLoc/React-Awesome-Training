@@ -1,5 +1,6 @@
+import Count from './components/Count'
 import Slider from './components/Slider'
-import TodoList from './components/TodoList'
+// import TodoList from './components/TodoList'
 // import Watch from './components/Watch'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <div>
       {/* <Watch /> */}
       {/* <TodoList /> */}
-      <Slider />
+      {/* <Slider /> */}
+      <Count />
     </div>
   )
 }
