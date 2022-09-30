@@ -7,10 +7,23 @@
 // import TodoList from './components/TodoList'
 // import Watch from './components/Watch'
 
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import Ads from './components/Ads'
 import Manager from './components/Manager'
+import MouseTracker from './components/MouseTracker'
+import { PositionType } from './components/MouseTracker/MouseTracker'
 import MainLayout from './layouts/MainLayout'
 
+// const renderAds = (value: PositionType) => <Ads {...value} visible />
+
 function App() {
+  const [, render] = useState({})
+  const renderRef = useRef<any>((value: PositionType) => <Ads {...value} visible />)
+  // const renderAds = useCallback((value: PositionType) => <Ads {...value} visible />, [])
+  // const renderAds = useMemo(() => {
+  //   return (value: PositionType) => <Ads {...value} visible />
+  // }, [])
+
   return (
     <div>
       {/* <Watch /> */}
@@ -21,9 +34,14 @@ function App() {
       {/* {<Welcome />} */}
       {/* <AutoInput /> */}
       {/* <ProductList /> */}
-      <MainLayout>
+      {/* <MainLayout>
         <Manager />
-      </MainLayout>
+      </MainLayout> */}
+      <div>
+        <button onClick={() => render({})}>Force Rerender</button>
+      </div>
+      <MouseTracker render={renderRef.current} />
+      {/* <Ads visible /> */}
     </div>
   )
 }
