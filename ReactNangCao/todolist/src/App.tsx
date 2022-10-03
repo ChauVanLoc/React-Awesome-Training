@@ -12,13 +12,14 @@ import Ads from './components/Ads'
 import Manager from './components/Manager'
 // import MouseTracker from './components/MouseTracker'
 import { PositionType } from './components/MouseTracker/MouseTracker'
+import TodoList from './components/TodoList'
 import User from './components/User'
 import MainLayout from './layouts/MainLayout'
 
 // const renderAds = (value: PositionType) => <Ads {...value} visible />
 
 function App() {
-  const [visible, setVisible] = useState(true)
+  // const [visible, setVisible] = useState(true)
   // const [, render] = useState({})
   // const renderRef = useRef<any>((value: PositionType) => <Ads {...value} visible />)
   // const renderAds = useCallback((value: PositionType) => <Ads {...value} visible />, [])
@@ -29,7 +30,7 @@ function App() {
   return (
     <div>
       {/* <Watch /> */}
-      {/* <TodoList /> */}
+      <TodoList />
       {/* <Slider /> */}
       {/* <Count /> */}
       {/* <Counter /> */}
@@ -44,10 +45,10 @@ function App() {
       </div>
       <MouseTracker render={renderRef.current} /> */}
       {/* <Ads visible /> */}
-      <div>
+      {/* <div>
         <button onClick={() => setVisible((prev) => !prev)}>Change visible</button>
       </div>
-      {visible && <User />}
+      {visible && <User />} */}
     </div>
   )
 }
